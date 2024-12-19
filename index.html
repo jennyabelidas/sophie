@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophie Red Hotel</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('sophieBACKGROUND.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff0000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav ul li a:hover {
+            color: #ff0000;
+        }
+
+        /* Hero Section */
+        #home {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        #home h1 {
+            font-size: 3em;
+            color: #ff0000;
+            margin-bottom: 10px;
+        }
+        #home p {
+            font-size: 1.5em;
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        #about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff0000;
+        }
+        #about p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+
+        /* Services Section */
+        #services {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        #services h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #ff0000;
+        }
+        .service-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            color: black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .service h3 {
+            margin: 15px 0 10px;
+            color: #ff0000;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff0000;
+        }
+        #contact p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Sophie Red Hotel Logo" class="logo">
+            <h1>Sophie Red Hotel Management</h1>
+        </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="create.php">Create</a></li> <!-- Added Create page -->
+    </ul>
+</nav>
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <div>
+            <h1>Welcome to Sophie Red Hotel</h1>
+            <p>Your luxury getaway awaits</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            At Sophie Red Hotel, we pride ourselves on offering an exceptional experience
+            for all our guests. From our stunning views to our premium facilities, every moment is
+            tailored to bring comfort and joy.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <div class="service">
+                <img src="service-room.jpg" alt="Room Services">
+                <h3>Luxury Rooms</h3>
+                <p>Experience world-class luxury and comfort in our spacious rooms.</p>
+            </div>
+            <div class="service">
+                <img src="service-pool.jpg" alt="Swimming Pool">
+                <h3>Swimming Pool</h3>
+                <p>Relax and unwind in our crystal-clear swimming pool.</p>
+            </div>
+            <div class="service">
+                <img src="service-dining.jpg" alt="Fine Dining">
+                <h3>Fine Dining</h3>
+                <p>Savor exquisite meals prepared by our top chefs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Have any questions or need assistance? Reach out to us, and we'll be happy to help!
+            <br>Email: info@sophieredhotel.com | Phone: +63 912 345 6789
+        </p>
+    </section>
+</body>
+</html>
